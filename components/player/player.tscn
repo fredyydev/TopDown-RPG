@@ -315,13 +315,15 @@ animation = &"walk_right"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_4f6uk"]
 blend_point_0/node = SubResource("AnimationNodeAnimation_iyyxq")
-blend_point_0/pos = Vector2(0, 1)
+blend_point_0/pos = Vector2(0, 1.1)
 blend_point_1/node = SubResource("AnimationNodeAnimation_g3akn")
-blend_point_1/pos = Vector2(0, -1)
+blend_point_1/pos = Vector2(0, -1.1)
 blend_point_2/node = SubResource("AnimationNodeAnimation_ovtdu")
 blend_point_2/pos = Vector2(-1, 0)
 blend_point_3/node = SubResource("AnimationNodeAnimation_4bq8s")
 blend_point_3/pos = Vector2(1, 0)
+min_space = Vector2(-1, -1.1)
+max_space = Vector2(1, 1.1)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_218pu"]
@@ -378,4 +380,4 @@ active = true
 parameters/conditions/is_idle = false
 parameters/conditions/is_moving = false
 parameters/Idle/blend_position = Vector2(0.00452495, -0.0547945)
-parameters/Walk/blend_position = Vector2(0.000947833, 0.00436687)
+parameters/Walk/blend_position = Vector2(0, 0.0131004)
